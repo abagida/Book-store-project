@@ -21,7 +21,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService{
 	@Autowired
 	private ShoppingCartRepository shoppingCartRepository;
 	
-	public shoppingCart updateShoppingCart(ShoppingCart shoppingCart) {
+	public ShoppingCart updateShoppingCart(ShoppingCart shoppingCart) {
 		BigDecimal cartTotal = new BigDecimal(0);
 		
 		List<CartItem> cartItemList = cartItemService.findByShoppingCart(shoppingCart);
